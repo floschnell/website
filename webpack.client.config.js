@@ -1,9 +1,8 @@
-const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require("path");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-
-  entry: "./client.js",
+  entry: "./src/client.js",
 
   output: {
     path: path.resolve(__dirname, "dist/static/"),
@@ -15,47 +14,46 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        exclude: [
-          path.resolve(__dirname, "./node_modules")
-        ],
+        exclude: [path.resolve(__dirname, "./node_modules")],
         use: {
           loader: "babel-loader",
           options: {
-            presets: ['es2015', 'react']
+            presets: ["es2015", "react"]
           }
         }
       },
       {
         test: /\.styl$/,
         use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [{
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-              modules: true,
-              localIdentName: '[hash:base64:5]'
-            }
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              plugins: function () {
-                return [
-                  require('autoprefixer')
-                ];
+          fallback: "style-loader",
+          use: [
+            {
+              loader: "css-loader",
+              options: {
+                sourceMap: true,
+                modules: true,
+                localIdentName: "[hash:base64:5]"
               }
-            }
-          },
-          'stylus-loader']
+            },
+            {
+              loader: "postcss-loader",
+              options: {
+                plugins: function() {
+                  return [require("autoprefixer")];
+                }
+              }
+            },
+            "stylus-loader"
+          ]
         })
-      }, {
+      },
+      {
         test: /\.md$/,
         use: [
           {
             loader: "html-loader",
             options: {
-              root: path.resolve(__dirname, './assets')
+              root: path.resolve(__dirname, "./src/assets")
             }
           },
           {
@@ -84,13 +82,13 @@ module.exports = {
       },
       {
         test: /\.json$/,
-        use: 'json-loader'
+        use: "json-loader"
       }
     ]
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: 'bundle.css'
+      filename: "bundle.css"
     })
   ]
 };
