@@ -1,109 +1,97 @@
 $dotSize = 40px
 
+.itemContainer
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
 .item
-    z-index: 1
-    color: white
-    font-size: 20px
-    line-height: 45px
-    margin-right: -22.5px
-    flex-wrap: nowrap
+    font-size: 1.3rem
+    margin-right: -20px
+    margin-bottom: 5px
     cursor: pointer
 
+.bubble
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+
+.bubble:before
+    z-index: 1;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    background-color: #aaa;
+    border-radius: 50%;
+    content: '';
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.175, 1.885, 0.32, 1.275);
+
+.bubble:after
+    position: absolute;
+    display: block;
+    left: 5px;
+    top: 5px;
+    width: 5px;
+    height: 5px;
+    background-color: #00979d;
+    border: 15px solid white;
+    border-radius: 50%;
+    content: '';
+    z-index: 3;
+    transition: width 0.2s, height 0.2s, border-width 0.2s;
+
+.itemSmall
+    margin-right: -15px;
+    font-size: 1rem;
+    .bubble:before
+        width: 35px;
+        height: 35px;
+    .bubble:after
+        width: 5px;
+        height: 5px;
+        border: 10px solid white;
+
+.itemActive
+    .bubble:after
+        width: 25px;
+        height: 25px;
+        border: 5px solid white;
+
+.itemActive.itemSmall
+    .bubble:after
+        width: 15px;
+        height: 15px;
+        border: 5px solid white;
+
+.item:hover
+    font-weight: 700
+    .bubble:before
+        transform: scale(1.2);
+    .bubble:after
+        transform: scale(1.2);
+
+.label
+    position: relative;
+    color: white;
+    z-index: 3;
+    margin-right: 10px;
+
 .title
-    margin-right: 10px
-    color: black
-    opacity: 0.5
+    font-size: 1.5rem
+    line-height: 45px;
+    color: black;
+    opacity: 0.5;
+    margin-right: 20px;
+    position: relative;
+    z-index: 2;
 
 .children
     display: flex
     flex-direction: column
     margin-top: -5px
 
-.child
-    font-size: 16px
-    line-height: 30px
-    margin-right: -18px
-    float: right
-    .dotContainer
-        width: 30px
-        height: 30px
-        margin-left: 5px
-    .dotShadow
-        left: 19px
-        width: 11px
-        height: 30px
-    .dotShadow::after
-        width: 30px
-        height: 30px
-        left: -19px
-        border-radius: 30px
-    .dot
-        width: 20px
-        height: 20px
-        border-radius: 10px
-
-.itemSelected.child
-    .dot::after
-        width: 14px
-        height: 14px
-
 .parent
     margin-right: 0
     text-align: right
     cursor: auto
-
-.itemSelected
-    .dot::after
-        width: 22px
-        height: 22px
-
-.dotContainer
-    margin-left: 10px
-    width: $dotSize
-    height: $dotSize
-    display: inline-block
-    position: relative
-    vertical-align: middle
-
-.dotShadow
-    position: absolute
-    top: 0
-    left: 24px
-    overflow: hidden
-    width: 16px
-    height: 40px
-
-.dotShadow::after
-    content: ''
-    display: block
-    position: absolute
-    left: -24px
-    width: $dotSize
-    height: $dotSize
-    background-color: #aaa
-    border-radius: $dotSize
-
-.dot
-    position: absolute
-    left: 0
-    top: 0
-    width: 30px
-    height: 30px
-    background-color: white
-    border-radius: 20px
-    z-index: 3
-    margin: 5px
-    vertical-align: middle
-    display:flex
-    justify-content: center
-    align-items: center
-
-.dot::after
-    content: ''
-    transition: all 0.1s;
-    width: 6px
-    height: 6px
-    background-color: #007d7f
-    display: block
-    border-radius: 20px
-    z-index: 10

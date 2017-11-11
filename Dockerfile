@@ -26,4 +26,5 @@ COPY conf/start.sh /var/
 RUN chmod +x /var/start.sh
 
 EXPOSE 80
+
 CMD [ "/var/start.sh" ]

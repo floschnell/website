@@ -13,10 +13,11 @@
     "build:dev":
       "./node_modules/.bin/webpack --config webpack.client.config.js --watch",
     "start": "npm run build:server & node dist/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "npm run deploy:container; npm run deploy:remote",
     "deploy:container":
       "docker build . -t floschnell/website; docker push floschnell/website",
+    "develop":
+      "docker build . -t floschnell/website; docker run -it --rm -p 8000:80 -v /home/florian/Projects/website/src:/var/www/website/src floschnell/website:latest /bin/bash -c \"./node_modules/.bin/webpack --config webpack.client.config.js --watch --watch-poll=1000 & /var/start.sh\"",
     "deploy:remote":
       "ssh root@floschnell.de \"docker pull floschnell/website; docker stop website; docker rm website; docker run -dit -p 80:80 --restart unless-stopped --name website floschnell/website\""
   },

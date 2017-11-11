@@ -4,7 +4,7 @@
 
 Trackmania ist wohl das Spiel, welches ich in meiner Schulzeit am meisten gespielt habe. Das interessante an Trackmania ist, dass es einen Editor beinhaltet, mit welchem man eigene Strecken erstellen und auf diesen dann über das Internet gegen andere Spieler antreten kann. Ich kann mich noch gut daran erinnern, wie ich eine Demo Version des Spiels in einer Zeitschrift entdeckte. Mir gefiel besonders die Kombination an Kreativität und Geschicklichkeit, welche von einem gefordert werden. Zu dieser Zeit modifizierte ich gerne Spiele (auch bekannt als *Modding*), da man dadurch ein großes Publikum erreichen konnte und meist nur kleine Veränderungen in der Spielmechanik zu einem ganz neuen Spielgefühl führen konnten.
 
-## Die Anfänge
+## Die Anfänger
 
 Es kam die Zeit, als die Entwickler von Trackmania eine XML-RPC Schnittstelle zu ihrer Dedicated Server Software hinzufügten. Dadurch konnten Drittanbieter (oder eben die Spieler) auf den aktuellen Spielstatus zugreifen oder auch den Spielverlauf beeinflussen. Da ich mich in meiner Freizeit auch viel mit der Entwicklung von Webseiten beschäftigte, kannte ich mich gut mit PHP aus. Ich begann also mit sehr einfachen Skripten und spielte mit der API, bis ich die Idee bekam, dass man doch die besten Rennzeiten aufzeichnen und über alle Server hinweg vergleichen könne. Da Spieler eigene Strecken erstellen und mit anderen teilen konnten gab es sehr viele Strecken und aber keine Informationen darüber, wer bereits wie schnell das Ziel erreicht hatte.
 
