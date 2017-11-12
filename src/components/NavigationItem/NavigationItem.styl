@@ -1,12 +1,5 @@
-$dotSize = 40px
-
-.itemContainer
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
 .item
-    font-size: 1.3rem
+    font-size: 1em
     margin-right: -20px
     margin-bottom: 5px
     cursor: pointer
@@ -40,29 +33,12 @@ $dotSize = 40px
     border-radius: 50%;
     content: '';
     z-index: 3;
-    transition: width 0.2s, height 0.2s, border-width 0.2s;
-
-.itemSmall
-    margin-right: -15px;
-    font-size: 1rem;
-    .bubble:before
-        width: 35px;
-        height: 35px;
-    .bubble:after
-        width: 5px;
-        height: 5px;
-        border: 10px solid white;
+    transition: width 0.2s, height 0.2s, border-width 0.2s, transform 0.3s cubic-bezier(0.175, 1.885, 0.32, 1.275);
 
 .itemActive
     .bubble:after
         width: 25px;
         height: 25px;
-        border: 5px solid white;
-
-.itemActive.itemSmall
-    .bubble:after
-        width: 15px;
-        height: 15px;
         border: 5px solid white;
 
 .item:hover
@@ -76,21 +52,38 @@ $dotSize = 40px
     z-index: 3;
     margin-right: 10px;
 
+.itemContainer
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
 .title
-    font-size: 1.5rem
-    line-height: 45px;
-    color: black;
-    opacity: 0.5;
-    margin-right: 20px;
-    position: relative;
-    z-index: 2;
+    font-size: 1.1em
+    line-height: 45px
+    color: black
+    opacity: 0.5
+    margin-right: 20px
+    position: relative
+    z-index: 2
 
 .children
     display: flex
     flex-direction: column
+    align-items: flex-end
     margin-top: -5px
+    font-size: 0.85em
 
-.parent
-    margin-right: 0
-    text-align: right
-    cursor: auto
+// second navigation layer
+.itemContainer
+    & .item .bubble
+        &:after
+            transform: scale(0.85)
+        &:before
+            transform: scale(0.85)
+    & .item:hover .bubble
+        &:after
+            transform: scale(1)
+        &:before
+            transform: scale(1)
+    & .label
+        margin-right: 5px

@@ -28,13 +28,12 @@ class NavigationItem extends React.Component {
           <div className={NavigationItemStyles.title}>
             {this.props.translate(this.props.name)}
           </div>
-          {children}
+          <div className={NavigationItemStyles.children}>{children}</div>
         </div>
       );
     } else {
       const classList = [
         NavigationItemStyles.item,
-        isChild ? NavigationItemStyles.itemSmall : null,
         this.props.active ? NavigationItemStyles.itemActive : null
       ].filter(className => className !== null);
 

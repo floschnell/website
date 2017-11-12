@@ -11,7 +11,9 @@ const Header = ({ translate }) => (
     </div>
     <div className={HeaderStyles.title}>
       <div className={HeaderStyles.name}>Florian Schnell</div>
-      <div className={HeaderStyles.job}>Full-Stack Sofwareentwickler</div>
+      <div className={HeaderStyles.job}>
+        {translate(DICTIONARY.SOFTWARE_ENGINEER)}
+      </div>
     </div>
   </div>
 );
