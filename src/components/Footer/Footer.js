@@ -8,11 +8,15 @@ const Footer = ({ translate }) => (
   <div className={FooterStyles.container}>
     &copy; 2017 - www.floschnell.de<br />
     Created with{" "}
-    <a target="_blank" href="https://www.reactjs.org">
+    <a target="_blank" rel="noopener noreferrer" href="https://www.reactjs.org">
       react
     </a>{" "}
     and{" "}
-    <a target="_blank" href="https://webpack.github.io">
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://webpack.github.io"
+    >
       webpack
     </a>.
   </div>
