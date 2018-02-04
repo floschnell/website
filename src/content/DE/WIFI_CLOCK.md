@@ -9,7 +9,7 @@ In diesem Projekt wollte ich das Wifi-Shield ausprobieren und da ich als Stunden
 ## Umsetzung
 
 <figure style="max-width:480px;float:left;margin-right:2em">
-![Geöffneter Wecker](/img/wifi-alarm-clock/wifi-alarm-clock-open.resized.png)
+![Geöffneter Wecker](/img/wifi-alarm-clock/wifi-alarm-clock1.png)
 <figcaption>Der Wecker ohne Deckel mit bereits angeschlossener Peripherie.</figcaption>
 </figure>
 

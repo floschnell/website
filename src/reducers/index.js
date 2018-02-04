@@ -19,16 +19,9 @@ export default function reducer(state = initialState, action) {
 
         case ACTIONS.SET_LANGUAGE:
             if (SITE[action.language]) {
-                if (Object.keys(SITE[action.language]).find(page => page === action.currentPage)) {
-                    return Object.assign({}, state, {
-                        language: action.language
-                    });
-                } else {
-                    return Object.assign({}, state, {
-                        language: action.language,
-                        currentPage: Object.keys(SITE[action.language])[0]
-                    });
-                }
+                return Object.assign({}, state, {
+                    language: action.language
+                });
             } else {
                 return state;
             }

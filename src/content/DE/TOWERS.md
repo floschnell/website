@@ -11,6 +11,6 @@ Wenn euch die Umsetzung interessiert, oder ihr euch an der Entwicklung beteilige
 ![alt text][towers1] ![alt text][towers2]![alt text][towers3]
 </div>
 
-[towers1]: /img/towers/towers-1.resized.png "Logo Title Text 2"
-[towers2]: /img/towers/towers-2.resized.png "Logo Title Text 2"
-[towers3]: /img/towers/towers-3.resized.png "Logo Title Text 2"
+[towers1]: /img/towers/towers1.png "Logo Title Text 2"
+[towers2]: /img/towers/towers2.png "Logo Title Text 2"
+[towers3]: /img/towers/towers3.png "Logo Title Text 2"

@@ -18,13 +18,15 @@ export default {
     [PAGES.PROJECTS]: {
       [PAGES.TOWERS]: {},
       [PAGES.ASECO]: {},
-      [PAGES.WIFI_CLOCK]: {}
+      [PAGES.WIFI_CLOCK]: {},
     }
   },
   [LANG.EN]: {
-    [PAGES.ABOUT_ME]: {}
+    [PAGES.ABOUT_ME]: {},
+    [PAGES.PROJECTS]: {
+      [PAGES.TOWERS]: {},
+      [PAGES.ASECO]: {},
+      [PAGES.WIFI_CLOCK]: {},
+    },
   },
-  [LANG.FR]: {
-    [PAGES.ABOUT_ME]: {}
-  }
 };

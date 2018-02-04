@@ -1,10 +1,14 @@
 # About Me
-My name is Florian Schnell and I am a "full stack" software engineer. I created this website to share some of my current projects and their stories with the world. My interests are manifold, but in particular I like travelling, sports like cycling and climbing, tinkering with computer hardware, coffee machines or doing other craftsmanship - but most of all I like developing software.
+My name is Florian Schnell and I am a full stack software engineer. My interests are manifold, but in particular I like travelling, sports like road cycling and climbing, also I like tinkering, be it computer hardware, coffee machines or bicycles ...
 
-I got into programming by designing my first small websites and games for which I used Dreamweaver and Flash MX. At first I created static websites, but as the web developed, I also started adding dynamic to those sites by using PHP and MySQL.
-Later on I became more interested in game development and as a consequence I learned C and C++.
-What always fascinated me about computers, was that they operated almost magically. During my childhood, I disassembled a lot of my more interesting toys (most of the time I really only -dis-assembled...), just because I was so curious about how they actually worked. I guess my fascination for computers has the same origin. Because of the urge to understand, how computers operated internally, I also learned how to design CPUs and how to program them using machine language. In my spare time I like to tinker and amongst others I already created a Wifi alarm clock that syncs to my Google calendar or a clone of the Ambilight that is integrated into some of the more modern TVs.
-Later during my studies I also helped in writing a graphics engine called "Vektoria" and therefor was occupied with how to use the DirectX API and graphics card shader units to render interactive 3d scenes.
+I got into programming by designing my first small websites and games for which I used Dreamweaver and Flash MX. At first I created static websites, but later I also started adding dynamic to those sites by using PHP and MySQL. Later on I became more interested in game development and as a consequence I learned C and C++.
+
+What always fascinated me about computers, was that they operated almost magically. During my childhood, I disassembled a lot of my more interesting toys (most of the time I really only -dis-assembled...), just because I was so curious about how they actually worked. I guess my fascination for computers has the same origin.
+
+In my spare time I like to tinker and amongst others I already created a Wi-Fi alarm clock that syncs to my Google calendar or a clone of an Ambilight that I could hook up to my computer screen.
+
+Later during my studies I also helped in writing a graphics engine called "Vektoria" and therefor was occupied linear algebra, DirectX, OpenGL and shader programming. This eventually led to my bachelor thesis, in which I evaluated several approaches to render light and shadow and also implemented the most suitable one for Vektoria.
+
 Today I am particularly interested in how we can keep big IT systems scalable, reliable and still easy to maintain. Eventually what I really like about my daily work, are the varying challenges, where I can use a lot of my past experience and interests and also always learn something new as well.
 
 ## Education

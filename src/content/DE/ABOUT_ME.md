@@ -1,11 +1,14 @@
 # Über mich
-Mein Name ist Florian Schnell, ich bin ein "full stack" Software Entwickler. Diese Website habe ich erstellt, um meine aktuellen Projekte und deren Entstehungsprozess zu sammeln und mit anderen zu teilen. Meine Interessen sind sehr vielfältig, aber vor allem reise ich gern, mache Sport wie zum Beispiel Rennradfahren und Klettern. Außerdem bastle ich gerne mit Computer Equipment und Kaffeemaschinen oder betätige mich anderweitig handwerklich - aber vor allem entwickle ich gerne Software.
+Ich heiße Florian Schnell und bin ein Full Stack Softwareentwickler. Meine Interessen sind sehr vielfältig, vor allem reise ich gerne, mache Sport wie Rennradfahren und Klettern, außerdem bastle ich gerne, sei es mit Computern, Fahrrädern oder Kaffemaschinen ...
 
-Ich habe früh mit dem Programmieren von kleineren Webseiten oder Spielen angefangen, damals noch mit Dreamweaver oder Flash MX. Zuerst waren dies nur statische Seiten, doch als sich das Internet weiter entwickelte, begann ich den Seiten durch PHP und MySQL Dynamik hinzuzufügen.
-Später entwickelte ich ein verstärktes Interesse an der Spieleentwicklung und als Konsequenz erlernte ich C und C++.
-Was mich an Computern immer am meisten fasziniert hat, war, dass keiner in meinem Umfeld eigentlich wusste, wie genau sie funktionieren. Während meiner Kindheit zerlegte ich viele meiner interessanteren Spielzeuge (ja, meistens habe ich sie tatsächlich nur zerlegt...) einfach, weil ich gerne gewusst hätte, wie sie funktionierten.
-Ich denke also, dass meiner Faszination bezüglich Computern die gleiche Motivation zu Grunde liegt. Diese Motivation hat mich dann auch dazu bewegt, zu lernen, wie man eine CPU entwirft und sie mit Maschinenbefehlen steuert. In meiner Freizeit bastele ich gerne mit Computer Hardware und so habe ich unter anderem einen WLAN Wecker gebaut, welcher sich mit meinem Google Kalender synchronisiert oder auch einen Ambilight-Klon, welcher zusammen mit einem Computermonitor benutzt werden kann.
-Später, in meinem Studium, half ich bei der Entwicklung einer Grafikengine mit dem Namen "Vektoria". Dadurch beschäftigte ich mich viel damit, wie man mit DirectX und den vielen Shadereinheiten der Grafikkarte eine interaktive 3d Szene auf dem Bildschirm zum Leben erwecken kann.
+Ich habe früh mit dem Programmieren von kleineren Webseiten oder Spielen angefangen, damals noch mit Dreamweaver oder Flash MX. Zuerst waren dies nur statische Seiten, doch bald begann ich den Seiten durch PHP und MySQL Leben einzuhauchen. Später entwickelte ich ein verstärktes Interesse an der Spieleentwicklung und als Konsequenz lernte ich C und C++.
+
+Was mich an Computern immer am meisten fasziniert hat, war, dass keiner in meinem Umfeld eigentlich wusste, wie sie funktionieren. Während meiner Kindheit zerlegte ich viele meiner interessanteren Spielzeuge aus Neugierde (ja, meistens habe ich sie tatsächlich nur zerlegt...). Ich denke, dass meiner Faszination bezüglich Computern die gleiche Motivation zu Grunde liegt.
+
+In meiner Freizeit bastele ich gerne mit Computer Hardware und so habe ich unter anderem einen WLAN Wecker gebaut, welcher sich mit meinem Google Kalender synchronisiert oder auch einen Ambilight-Klon, welcher zusammen mit einem Computermonitor benutzt werden kann.
+
+In meinem Studium, half ich bei der Entwicklung einer Grafikengine mit dem Namen "Vektoria". Dadurch beschäftigte ich mich viel mit linearer Algebra, DirectX, OpenGL und Shaderprogrammierung. Dies führte letztendlich auch zu meiner Bachelorarbeit, in welcher ich verschiedene Methoden zur Licht- und Schattenberechnung miteinander verglich und letztendlich eine davon auch in Vektoria implementierte.
+
 Heute interessiert mich vor allem, wie man große IT Systeme skalierbar, zuverlässig und dennoch einfach wartbar machen kann. Was mir an meiner täglichen Arbeit am meisten Spaß macht, sind die vielen verschiedenen Herausforderungen, wo ich aus meinen bisherigen Erfahrungen und Interessen schöpfen kann und zudem jeden Tag etwas neues hinzulerne.
 
 ## Ausbildung

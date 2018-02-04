@@ -1,3 +1,0 @@
-# Bonjour
-
-This is about me ...
