@@ -2,17 +2,19 @@ FROM node:latest
 
 # install node
 RUN apt-get -qq update && \
-    apt-get -qq install -y nginx
+    apt-get -qq install -y nginx && \
+    npm -g install yarn
 
 # install dependencies
 WORKDIR /var/www/website
 COPY package.json /var/www/website/
-RUN npm install --silent
+COPY yarn.lock /var/www/website/
+RUN yarn install
 
 # build new website
 COPY src /var/www/website/src
 COPY webpack.*config.js /var/www/website/
-RUN npm run build
+RUN yarn build
 COPY favicon.ico /var/www/website/dist/
 
 # install own configuration
