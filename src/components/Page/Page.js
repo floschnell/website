@@ -17,21 +17,35 @@ class Page extends React.Component {
 
     componentWillReceiveProps(nextProps) {
         this.state.content = '';
-        System.import(`../../content/${nextProps.language}/${nextProps.currentPage}.md`).then(content =>
-            this.setState({
-                content
-            })
-        ).catch(err => {
-            System.import(`../../content/${Languages.DE}/${nextProps.currentPage}.md`).then(content =>
-                this.setState({
-                    content: `<p class="${PageStyles.fallback}">${this.props.translate('LANGUAGE_NOT_AVAILABLE')}</p>${content}`
-                })
-            ).catch(err =>
-                this.setState({
-                    content: 'Content could not be found!',
-                })
-            );
+
+        const defaultLanguages = [
+          Languages.DE,
+          Languages.EN,
+        ];
+        const filteredLanguages = defaultLanguages.filter(lang => lang !== nextProps.language);
+        const updatedLanguages = [nextProps.language, ...filteredLanguages];
+
+        this.loadLanguage(nextProps, updatedLanguages);
+    }
+
+    loadLanguage(nextProps, languages, isFallback = false) {
+      const language = languages.shift();
+      System.import(`../../content/${language}/${nextProps.currentPage}.md`).then(content => {
+        if (isFallback) {
+          content = `<p class="${PageStyles.fallback}">${this.props.translate('LANGUAGE_NOT_AVAILABLE')}</p>${content}`;
+        }
+        this.setState({
+          content,
         });
+      }).catch(err => {
+        if (languages.length > 0) {
+          this.loadLanguage(nextProps, languages, true);
+        } else {
+          this.setState({
+              content: 'Content could not be found!',
+          });
+        }
+      });
     }
 
     render() {

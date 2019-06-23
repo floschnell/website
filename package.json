@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "My personal website.",
   "main": "index.html",
-  "browserslist": ["> 1%", "last 2 versions"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "scripts": {
     "build:server": "./node_modules/.bin/webpack --progress --config webpack.server.config.js -p --target node",
     "build:client": "./node_modules/.bin/webpack --progress --config webpack.client.config.js -p",
@@ -12,7 +15,7 @@
     "start": "yarn build:server & node dist/server.js",
     "deploy": "yarn deploy:container; yarn deploy:remote",
     "deploy:container": "docker build . -t floschnell/website; docker push floschnell/website",
-    "develop": "docker build . -t floschnell/website; docker run -it --rm -p 8000:80 -v /home/florian/Projects/website/src:/var/www/website/src floschnell/website:latest /bin/bash -c \"./node_modules/.bin/webpack --config webpack.client.config.js --watch --watch-poll=1000 & /var/start.sh\"",
+    "develop": "docker build . -t floschnell/website; docker run -it --rm -p 8000:80 -v /Users/flsc/Projects/website/src:/var/www/website/src floschnell/website:latest /bin/bash -c \"./node_modules/.bin/webpack --config webpack.client.config.js --watch --watch-poll=1000 & /var/start.sh\"",
     "deploy:remote": "ssh root@floschnell.de \"docker pull floschnell/website; docker stop website; docker rm website; docker run -dit -p 80:80 --restart unless-stopped --name website floschnell/website\""
   },
   "author": "Florian Schnell",
@@ -28,15 +31,16 @@
     "express": "^4.15.2",
     "file-loader": "^0.11.1",
     "html-loader": "^0.4.5",
-    "image-webpack-loader": "^3.3.0",
+    "image-webpack-loader": "3.6.0",
+    "immer": "^3.1.2",
     "json-loader": "^0.5.4",
     "markdown-loader": "^2.0.0",
     "null-loader": "^0.1.1",
     "prop-types": "^15.5.6",
-    "react": "^15.5.3",
-    "react-dom": "^15.5.3",
-    "react-redux": "^5.0.4",
-    "redux": "^3.6.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.1",
     "style-loader": "^0.16.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
@@ -46,6 +50,7 @@
   "devDependencies": {
     "extract-text-webpack-plugin": "^2.1.2",
     "postcss-loader": "^2.0.8",
+    "svg-inline-loader": "^0.8.0",
     "webpack": "^2.2.0"
   }
 }

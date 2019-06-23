@@ -58,4 +58,8 @@ export default {
         [LANG.DE]: "Towers",
         [LANG.EN]: "Towers",
     },
+    [PAGES.FLATCRAWL]: {
+      [LANG.DE]: "FlatCrawl",
+      [LANG.EN]: "FlatCrawl",
+  },
 };

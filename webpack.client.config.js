@@ -62,7 +62,7 @@ module.exports = {
         ]
       },
       {
-        test: /(\.png$)|(\.jpe?g$)/,
+        test: /(\.png$)|(\.jpe?g$)|(\.gif$)/,
         exclude: /embedded/,
         use: [
           {
@@ -75,6 +75,10 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.svg$/,
+        loader: 'url-loader?mimetype=image/svg+xml'
       },
       {
         test: /.*embedded.*\.png$/,

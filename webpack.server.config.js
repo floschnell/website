@@ -9,7 +9,7 @@ module.exports = {
     filename: "server.js",
     libraryTarget: "commonjs2"
   },
-  externals: ["express", "path", "react-dom/server", "fs"],
+  externals: ["express", "path", "fs", "react", "react-dom"],
   module: {
     rules: [
       {
@@ -60,9 +60,13 @@ module.exports = {
         ]
       },
       {
-        test: /(\.png$)|(\.jpe?g$)/,
+        test: /(\.png$)|(\.jpe?g$)|(\.gif$)/,
         exclude: /embedded/,
         use: "null-loader"
+      },
+      {
+        test: /\.svg$/,
+        loader: 'url-loader?mimetype=image/svg+xml'
       },
       {
         test: /.*embedded.*\.png$/,
