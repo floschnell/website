@@ -24,8 +24,10 @@ COPY favicon.ico /var/www/website/dist/
 
 # install own configuration
 COPY conf/floschnell /etc/nginx/sites-available/
+COPY conf/flatcrawl /etc/nginx/sites-available/
 RUN rm /etc/nginx/sites-enabled/default && rm /etc/nginx/sites-available/default && \
-    ln -s /etc/nginx/sites-available/floschnell /etc/nginx/sites-enabled/
+    ln -s /etc/nginx/sites-available/floschnell /etc/nginx/sites-enabled/ && \
+    ln -s /etc/nginx/sites-available/flatcrawl /etc/nginx/sites-enabled/
 COPY conf/nginx.conf /etc/nginx/
 
 # get start script
